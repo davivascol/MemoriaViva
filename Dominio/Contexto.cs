@@ -10,9 +10,12 @@ namespace Dominio
 {
   public class Contexto : DbContext
   {
-
     public Contexto() : base("name=MemoriaV") { }
+
+    public DbSet<LookUpRole> LookupRole { get; set; }
     public DbSet<SysUser> SysUser { get; set; }
+    public DbSet<SysUserProfile> SysUserProfile { get; set; }
+    public DbSet<SysUserRole> SysUserRole { get; set; }
   }
 }
 

@@ -57,8 +57,15 @@
     <Compile Include="Migrations\201712031505464_CriacaoBD.Designer.cs">
       <DependentUpon>201712031505464_CriacaoBD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712031952411_1.cs" />
+    <Compile Include="Migrations\201712031952411_1.Designer.cs">
+      <DependentUpon>201712031952411_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\LookUpRole.cs" />
     <Compile Include="Model\SysUser.cs" />
+    <Compile Include="Model\SysUserProfile.cs" />
+    <Compile Include="Model\SysUserRole.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712031505464_CriacaoBD.resx">
       <DependentUpon>201712031505464_CriacaoBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712031952411_1.resx">
+      <DependentUpon>201712031952411_1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
