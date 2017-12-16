@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominio.Model
 {
-  public class SysUser
+  public class SystemUser
   {
     [Key]
     public int Codigo { get; set; }

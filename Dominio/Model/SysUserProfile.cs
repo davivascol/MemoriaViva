@@ -13,8 +13,8 @@ namespace Dominio.Model
     [Key]
     public int Codigo { get; set; }
 
-    [ForeignKey("SysUser")]
-    public int SysUserID { get; set; }
+    [ForeignKey("SystemUser")]
+    public int SystemUserID { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public char Gender { get; set; }
@@ -22,6 +22,6 @@ namespace Dominio.Model
     public DateTime RowCreatedDateTime { get; set; }
     public int RowModifiedSysUserID { get; set; }
     public DateTime RowModifiedDateTime { get; set; }
-    public SysUser SysUser { get;set;}
+    public SystemUser SystemUser { get;set;}
   }
 }

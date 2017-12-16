@@ -13,7 +13,7 @@ namespace Dominio
     public Contexto() : base("name=MemoriaV") { }
 
     public DbSet<LookUpRole> LookupRole { get; set; }
-    public DbSet<SysUser> SysUser { get; set; }
+    public DbSet<SystemUser> SystemUser { get; set; }
     public DbSet<SysUserProfile> SysUserProfile { get; set; }
     public DbSet<SysUserRole> SysUserRole { get; set; }
   }

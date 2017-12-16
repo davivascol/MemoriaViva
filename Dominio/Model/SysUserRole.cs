@@ -13,8 +13,8 @@ namespace Dominio.Model
     [Key]
     public int Codigo {get; set;}
 
-    [ForeignKey("SysUser")]
-    public int SysUserID { get; set; }
+    [ForeignKey("SystemUser")]
+    public int SystemUserID { get; set; }
     [ForeignKey("LookUpRole")]
     public int LookUpRoleID { get; set; }
     public bool IsActive { get; set; }
@@ -22,7 +22,7 @@ namespace Dominio.Model
     public DateTime RowCreatedDateTime { get; set; }
     public int RowModifiedSYSUserID { get; set; }
     public DateTime RowModifiedDateTime { get; set; }
-    public SysUser SysUser { get; set; }
+    public SystemUser SystemUser { get; set; }
     public LookUpRole LookUpRole { get; set; }
 
   }
